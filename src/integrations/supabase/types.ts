@@ -377,6 +377,15 @@ export type Database = {
         Args: { _amount: number; _phone: string; _user_id: string }
         Returns: string
       }
+      srv_review_deposit: {
+        Args: {
+          _admin_id: string
+          _approve: boolean
+          _reason?: string
+          _transaction_id: string
+        }
+        Returns: string
+      }
     }
     Enums: {
       app_role: "admin" | "user"
