@@ -386,6 +386,15 @@ export type Database = {
         }
         Returns: string
       }
+      srv_review_withdrawal: {
+        Args: {
+          _admin_id: string
+          _approve: boolean
+          _reason?: string
+          _transaction_id: string
+        }
+        Returns: string
+      }
     }
     Enums: {
       app_role: "admin" | "user"
