@@ -1,17 +1,10 @@
-# Mifugo Farm roadmap
+# Roadmap
 
-## Done
-- App imported into this Lovable project (pages, styling, assets).
-- Database rebuilt: profiles, roles, packages, investments, transactions, referral commissions, points, row-level security.
-- Server-side farm operations kept in the protected schema; security check clean.
-- Animal package catalogue seeded (free starter duck + 10 paid animals).
-- Email/password sign-in and Google sign-in enabled.
-- Setup screen now has a "Skip for now" action, plus a dismissible reminder to add missing details later.
-- Daily income job scheduled (runs 12:10 AM).
-- Invite and profile dashboards refined for compact mobile viewing.
-- Phone number sign-up and sign-in added alongside email access.
-
-## Open
-- M-Pesa payments need real Daraja credentials before deposits and withdrawals work end to end.
-- No signed-in end-to-end test yet (email confirmation is on, so a real signup is needed).
-- Phone confirmation requires an SMS provider to be connected before live codes can be delivered.
+- [x] Import pixel-skip-magic repo into project
+- [x] Enable Lovable Cloud and apply all 5 database migrations
+- [x] Remove M-Pesa Daraja integration (server function + callback route)
+- [x] Manual deposit review flow: Recharge → payment details (0700000000, 30-min countdown, copy buttons) → confirm with transaction ref → pending
+- [x] Admin dashboard: deposit review queue with approve/reject (approving credits deposit balance)
+- [x] Verified end-to-end in browser (desktop + mobile): farmer submits, admin approves, balance credited
+- [ ] Add your real company account number/name (currently demo values)
+- [ ] Publish the app
